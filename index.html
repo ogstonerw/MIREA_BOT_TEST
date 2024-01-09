@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мобильные телефоны</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="product-card" id="product1">
+    <img class="product-image" src="Iphone15.jpg" alt="Phone 1">
+    <div class="buttons-container">
+        <button class="button add-button" onclick="addToCart('product1')">Добавить</button>
+        <span id="count-product1">0</span>
+        <button class="button remove-button" onclick="removeFromCart('product1')">Удалить</button>
+    </div>
+</div>
+
+<div class="product-card" id="product2">
+    <img class="product-image" src="iphone14.jpg" alt="Phone 2">
+    <div class="buttons-container">
+        <button class="button add-button" onclick="addToCart('product2')">Добавить</button>
+        <span id="count-product2">0</span>
+        <button class="button remove-button" onclick="removeFromCart('product2')">Удалить</button>
+    </div>
+</div>
+
+<script>
+    function addToCart(productId) {
+        var countElement = document.getElementById('count-' + productId);
+        var count = parseInt(countElement.innerText);
+        countElement.innerText = count + 1;
+    }
+
+    function removeFromCart(productId) {
+        var countElement = document.getElementById('count-' + productId);
+        var count = parseInt(countElement.innerText);
+        if (count > 0) {
+            countElement.innerText = count - 1;
+        }
+    }
+</script>
+
+</body>
+</html>

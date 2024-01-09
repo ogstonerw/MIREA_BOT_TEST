@@ -1,0 +1,53 @@
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.product-image {
+    width: 100%;
+    max-width: 100%; /* Устанавливаем максимальную ширину изображения в 100% от родительского блока */
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.button {
+    flex: 1;
+    padding: 8px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-button {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.remove-button {
+    background-color: #ff3333;
+    color: #fff;
+}
+
+    .product-image {
+        max-height: 150px;
+    }
+}
